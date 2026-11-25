@@ -1,0 +1,89 @@
+:root {
+    --bg: #fff7ed;
+    --ink: #2b2b2b;
+    --brand: #e63946;
+    --brand2: #1d4ed8;
+    --card: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--brand2);
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a.active {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.card {
+    background: var(--card);
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+    margin: 1rem 0;
+}
+
+.hero {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--brand);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    transition: .2s;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: .9rem;
+}
